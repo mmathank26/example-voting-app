@@ -90,6 +90,12 @@ services:
 
 volumes:
   db-data:
+  batch:
+    driver: local
+    driver_opts:
+      type: none
+      device: /batch
+      o: bind
 
 networks:
   front-tier:
