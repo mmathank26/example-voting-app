@@ -3,7 +3,7 @@
 # create 3000 votes (2000 for option a, 1000 for option b)
 # Update the URL to point to your server in VOTE_URL
 
-# Updating comment for testing purposes
+
 VOTE_URL="http://vote/"
 
 ab -n 1000 -c 50 -p posta -T "application/x-www-form-urlencoded" "$VOTE_URL"
